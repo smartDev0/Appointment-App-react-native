@@ -1,6 +1,6 @@
-<ion-header  class="ion-no-border">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-buttons slot="start">
+    <ion-buttons slot="start" routerLink="/welcome" routerDirection="forward">
       <img src="assets/imgs/Back Icon.png" alt="..." class="back-icon">
     </ion-buttons>
     <ion-title class="auth-title">Register</ion-title>
@@ -42,11 +42,12 @@
       <div class="form-group">
         <ion-button expand="block" color="red" class="auth-button">SUBMIT</ion-button>
       </div>
-      <br>
+    </div>
+    <div class="auth-bottom">
       <div class="text">
-        Already  have an account ?  
+        Already have an account ?
       </div>
-      <div class="auth-text">
+      <div class="auth-text" mode="ios" routerLink="/login" routerDirection="forward">
         LOGIN
       </div>
     </div>
