@@ -33,6 +33,20 @@ const routes: Routes = [
         (m) => m.RegisterPageModule
       ),
   },
+  {
+    path: "forgot",
+    loadChildren: () =>
+      import("./pages/account/forgot/forgot.module").then(
+        (m) => m.ForgotPageModule
+      ),
+  },
+  {
+    path: "done",
+    loadChildren: () =>
+      import("./pages/account/done/done.module").then(
+        (m) => m.DonePageModule
+      ),
+  },
 ];
 
 @NgModule({
