@@ -19,6 +19,20 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: "login",
+    loadChildren: () =>
+      import("./pages/account/login/login.module").then(
+        (m) => m.LoginPageModule
+      ),
+  },
+  {
+    path: "register",
+    loadChildren: () =>
+      import("./pages/account/register/register.module").then(
+        (m) => m.RegisterPageModule
+      ),
+  },
 ];
 
 @NgModule({
