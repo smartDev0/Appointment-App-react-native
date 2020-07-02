@@ -32,7 +32,35 @@ export class AppComponent {
   }
   logout() {
     this.menuCtrl.toggle();
-     this.nav.navigateRoot("/login");
-
+    this.nav.navigateRoot("/login");
+  }
+  onChangeRoute(name) {
+    switch (name) {
+      case "home":
+        this.menuCtrl.toggle();
+        this.nav.navigateRoot("/home");
+        break;
+      case "appointment":
+        this.menuCtrl.toggle();
+        this.nav.navigateRoot("/appointment");
+        break;
+      case "favourite":
+        this.menuCtrl.toggle();
+        this.nav.navigateRoot("/favourite");
+        break;
+      case "profile":
+        this.menuCtrl.toggle();
+        this.nav.navigateRoot("/profile");
+        break;
+      case "health":
+        this.menuCtrl.toggle();
+        this.nav.navigateRoot("/health");
+        break;
+      case "help":
+        this.menuCtrl.toggle();
+        this.nav.navigateRoot("/help");
+        break;
+    }
   }
 }
+

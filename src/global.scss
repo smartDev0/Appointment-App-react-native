@@ -29,9 +29,8 @@
   width: 17px;
   height: 17px;
   cursor: pointer;
-  
 }
-.back-button{
+.back-button {
   position: absolute;
   left: 10px;
 }
@@ -163,11 +162,11 @@ ion-menu {
   display: flex;
 }
 .close-icon {
-      font-size: 26px;
-    float: right;
-    margin-right: 11px;
-    margin-top: 5px;
-    cursor: pointer;
+  font-size: 26px;
+  float: right;
+  margin-right: 11px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 .map-icon {
   width: 10px;
@@ -185,33 +184,94 @@ ion-menu {
   font-family: "Roboto";
   text-align: center;
 }
-.logout-img{
-        width: 60px;
-    position: absolute;
-    margin-top: -58px;
-    right: 28px;
-    cursor: pointer;
+.logout-img {
+  width: 60px;
+  position: absolute;
+  margin-top: -58px;
+  right: 28px;
+  cursor: pointer;
 }
-.item{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border:2px solid #9a9a9a;
-        display: flex;
-    align-items: center;
-    justify-content: center;
+.item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.home-icon{
-    font-size: 22px;
+.home-icon {
+  font-size: 22px;
 }
-.item-list{
-    display: flex;
+.item-list {
+  display: flex;
 }
-.item-list label{
-        margin-left: 20px;
-    display: flex;
-    align-items: center;
+.item-list label {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
 }
-.menu-icon{
+.menu-icon {
   width: 20px;
+}
+.health-img {
+  width: 100%;
+  height: 150px;
+}
+.health-content {
+  padding: 10px;
+}
+.health-card-header {
+  padding: 0px !important;
+}
+.health-card {
+  border-radius: 10px !important;
+}
+.h2 {
+  color: black !important;
+}
+.health-view-img {
+  width: 100%;
+  height: 250px;
+}
+.health-view-back {
+  position: absolute;
+  height: 21px;
+  top: 30px;
+  left: 10px;
+  outline: none !important;
+  cursor: pointer;
+}
+.health-camp-item {
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #3d3d3d;
+  font-weight: 300;
+  font-family: "Roboto";
+  // text-align: center;
+  font-size: 21px;
+  padding: 10px 24px;
+  border-bottom: 1px solid gainsboro;
+}
+.book-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  margin: 5px 10px;
+}
+.health-camp-text {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 13px;
+}
+.book-icon img {
+  width: 16px;
+}
+.doctor-icon{
+  margin-right: 10px;
 }

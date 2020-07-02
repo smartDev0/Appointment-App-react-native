@@ -67,7 +67,23 @@ const routes: Routes = [
   {
     path: "map-view",
     loadChildren: () =>
-      import("./pages/home/map-view/map-view.module").then((m) => m.MapViewPageModule),
+      import("./pages/home/map-view/map-view.module").then(
+        (m) => m.MapViewPageModule
+      ),
+  },
+  {
+    path: "health",
+    loadChildren: () =>
+      import("./pages/health/health-camp/health-camp.module").then(
+        (m) => m.HealthCampPageModule
+      ),
+  },
+  {
+    path: "health/:id",
+    loadChildren: () =>
+      import("./pages/health/health-camp-detail/health-camp-detail.module").then(
+        (m) => m.HealthCampDetailPageModule
+      ),
   },
 ];
 
