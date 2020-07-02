@@ -99,6 +99,20 @@ const routes: Routes = [
         (m) => m.ProfileEditPageModule
       ),
   },
+  {
+    path: "favorite",
+    loadChildren: () =>
+      import("./pages/favorite/favorite/favorite.module").then(
+        (m) => m.FavoritePageModule
+      ),
+  },
+  {
+    path: "help",
+    loadChildren: () =>
+      import("./pages/help/help.module").then(
+        (m) => m.HelpPageModule
+      ),
+  },
 ];
 
 @NgModule({

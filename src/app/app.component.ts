@@ -44,9 +44,9 @@ export class AppComponent {
         this.menuCtrl.toggle();
         this.nav.navigateRoot("/appointment");
         break;
-      case "favourite":
+      case "favorite":
         this.menuCtrl.toggle();
-        this.nav.navigateRoot("/favourite");
+        this.nav.navigateRoot("/favorite");
         break;
       case "profile":
         this.menuCtrl.toggle();
