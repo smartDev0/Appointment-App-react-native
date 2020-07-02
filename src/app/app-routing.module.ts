@@ -43,9 +43,12 @@ const routes: Routes = [
   {
     path: "done",
     loadChildren: () =>
-      import("./pages/account/done/done.module").then(
-        (m) => m.DonePageModule
-      ),
+      import("./pages/account/done/done.module").then((m) => m.DonePageModule),
+  },
+  {
+    path: "home",
+    loadChildren: () =>
+      import("./pages/home/home/home.module").then((m) => m.HomePageModule),
   },
 ];
 

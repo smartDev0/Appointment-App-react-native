@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 34" width="38" height="34">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-82 -969L668 -969L668 365L-82 365Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #707070 } 
+	</style>
+	<g id="Side Menu Screen" clip-path="url(#cp1)">
+		<g id="Menu">
+			<g id="Health Camp">
+				<g id="Icon">
+					<path id="Camp Icon" class="shp0" d="M34.84 32.42L20.43 8.54L24.5 1.8L23.12 1L19.5 6.99L15.88 1L14.5 1.8L18.56 8.54L4.15 32.42L1 32.42L1 34L38 34L38 32.42L34.84 32.42ZM19.5 10.09L32.98 32.42L25 32.42C25.17 30.5 25.31 26.03 23.21 23.62C22.27 22.56 21.02 22.01 19.5 22.01C17.97 22.01 16.73 22.56 15.79 23.62C13.68 26.03 13.83 30.5 14 32.42L6.02 32.42L19.5 10.09ZM15.61 32.42C15.41 30.41 15.4 26.5 17.01 24.65C17.63 23.94 18.45 23.59 19.5 23.59C20.55 23.59 21.36 23.94 21.99 24.65C23.74 26.65 23.54 30.8 23.38 32.42L15.61 32.42Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

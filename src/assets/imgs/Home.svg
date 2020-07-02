@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-84 -381L666 -381L666 953L-84 953Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Side Menu Screen" clip-path="url(#cp1)">
+		<g id="Menu">
+			<g id="Home">
+				<g id="Icon">
+					<path id="Home Icon" class="shp0" d="M34.58 12.71L18.4 0.59C17.97 0.26 17.37 0.26 16.94 0.59L0.76 12.71C0.46 12.93 0.28 13.29 0.28 13.67L0.28 34.08C0.28 34.74 0.82 35.28 1.49 35.28L33.85 35.28C34.52 35.28 35.06 34.74 35.06 34.08L35.06 13.67C35.06 13.29 34.88 12.93 34.58 12.71ZM19.65 32.88L15.69 32.88L15.69 24.17L19.65 24.17L19.65 32.88ZM32.64 32.88L22.07 32.88L22.07 22.97C22.07 22.3 21.53 21.77 20.86 21.77L14.48 21.77C13.82 21.77 13.27 22.3 13.27 22.97L13.27 32.88L2.7 32.88L2.7 14.26L17.67 3.05L32.64 14.26L32.64 32.88L32.64 32.88Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
