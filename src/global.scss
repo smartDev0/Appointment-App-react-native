@@ -348,30 +348,30 @@ ion-menu {
   outline: none;
   margin-top: 3px;
 }
-.custom-select{
-    padding: 5px;
+.custom-select {
+  padding: 5px;
 }
-.ion-item{
+.ion-item {
   width: 100%;
   border: none;
   border-radius: 10px;
-    height: 40px;
+  height: 40px;
   border-radius: 5px;
   filter: drop-shadow(0px 22px 20px rgba(0, 0, 0, 0.19));
   background-color: #ffffff;
 }
-.search-input{
+.search-input {
   width: 100%;
   background-color: #ededed;
   --padding-end: 28px;
 }
-.search-icon{
-    position: absolute;
-    right: 10px;
-    margin-top: -28px;
-    z-index: 100;
+.search-icon {
+  position: absolute;
+  right: 10px;
+  margin-top: -28px;
+  z-index: 100;
 }
-.slide-item{
+.slide-item {
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -382,40 +382,47 @@ ion-menu {
   margin: 13px 5px;
   cursor: pointer;
 }
-.slide-item img{
+.slide-item img {
   width: 20px;
 }
-.eye-icon{
+.eye-icon {
   color: grey;
-    font-size: 30px;
+  font-size: 30px;
 }
-.neurologist{
+.neurologist {
   height: 50px;
-  filter: drop-shadow(0 0 10.5px rgba(0,0,0,0.08));
-background-color: #f0efef;
+  filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.08));
+  background-color: #f0efef;
 }
-.neurologist-label{
-  line-height: 42px;;margin-left: 20px; cursor: pointer;
-}
-.remove-label{
-  line-height: 42px;margin-right: 20px;
+.neurologist-label {
+  line-height: 42px;
+  margin-left: 20px;
   cursor: pointer;
 }
-.card-img{
-  width: 80px!important;
-  height: 80px!important;
+.remove-label {
+  line-height: 42px;
+  margin-right: 20px;
+  cursor: pointer;
 }
-.card-doctor-infor{
-  margin-left: 15px;    display: flex;
-    align-items: center;
+.card-img {
+  width: 80px !important;
+  height: 80px !important;
 }
-.card-doctor{
-  display: flex
+.card-doctor-infor {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
 }
-.t-align-r{
+.card-doctor {
+  display: flex;
+}
+.t-align-l {
   text-align: left;
 }
-.card-map{
+.t-align-r {
+  text-align: right;
+}
+.card-map {
   margin-top: 4px;
   width: 100%;
   height: 100px;
@@ -424,12 +431,79 @@ background-color: #f0efef;
   align-items: center;
   justify-content: center;
 }
-.position-img{
-  width: 25px!important;
+.position-img {
+  width: 25px !important;
 }
-.d-block{
+.d-block {
   display: block;
 }
-.help-img{
+.d-flex {
+  display: flex;
+}
+.help-img {
   width: 100%;
+}
+.segment-icon {
+  font-size: 18px;
+}
+.appointment-status {
+  padding: 12px 15px;
+}
+.appointment-card-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.appointment-text {
+  color: #000000;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 14px;
+  text-align: left;
+}
+.appointment-card-content {
+  padding: 10px 15px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.appointment-card-content-text {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.appointment-map {
+  width: 70px;
+  height: 59px;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appointment-card-content img {
+  width: 55px;
+  height: 55px;
+}
+.appointment-map img {
+  width: 25px;
+}
+.appointment-card-action {
+  padding: 10px 15px;
+}
+ion-segment {
+  background: white;
+}
+.review {
+  padding: 20px 25px;
+}
+.review-title {
+  font-size: 23px;
+  text-align: center;
+}
+.form-textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 8px;
+  height: 140px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.15));
+  background-color: #ffffff;
 }

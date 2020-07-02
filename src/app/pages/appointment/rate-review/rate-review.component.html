@@ -1,3 +1,46 @@
-<p>
-  rate-review works!
-</p>
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" routerLink="/appointment" routerDirection="forward">
+      <img src="assets/imgs/back.svg" alt="..." class="back-icon">
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="notifications"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>RATE & REVIEW</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <div class="review">
+    <ion-row>
+      <ion-col style="text-align: center;">
+        <ion-label class="review-title">
+          How was your session?
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ion-row>
+      <ion-col style="text-align: center;">
+        <ion-label class="review-title">
+         Write your review....
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+ <textarea placeholder="Enter more information here..." class="form-textarea"></textarea>
+      </ion-col>
+    </ion-row>
+   
+    <br>
+    <br>
+    <ion-button expand="block" color="success">SUBMIT</ion-button>
+  </div>
+</ion-content>

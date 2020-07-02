@@ -1,3 +1,251 @@
-<p>
-  appointment works!
-</p>
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" routerLink="/home" routerDirection="forward">
+      <img src="assets/imgs/back.svg" alt="..." class="back-icon">
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="notifications"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>APPOINTMENTS</ion-title>
+  </ion-toolbar>
+  <ion-segment mode="md" (ionChange)="segmentChanged($event.target.value)" [(ngModel)]="segment">
+    <ion-segment-button mode="md" value="0" (click)="changeSlide(0)">
+      <div class="d-flex">
+        <ion-icon name="person" class="segment-icon"></ion-icon>
+        <ion-label name="honey"><b>SELF</b></ion-label>
+      </div>
+    </ion-segment-button>
+    <ion-segment-button mode="md" value="1" (click)="changeSlide(1)">
+      <div class="d-flex">
+        <ion-icon name="people" class="segment-icon"></ion-icon>
+        <ion-label name="buddy"><b>FAMILY</b></ion-label>
+      </div>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+<ion-content fullscreen>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)" closeDuration="300ms" pullMin="100"
+    snapbackDuration="200ms">
+    <ion-refresher-content pullingText="Pull to refresh" refreshingSpinner="bubbles" refreshingText="waiting...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="0">
+      <div class="appointment-status">
+        <ion-row>
+          <ion-col>
+            UPCOMING
+          </ion-col>
+          <ion-col class="t-align-r">
+            02
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-card>
+        <ion-card-header style="padding: 0px;">
+          <div class="appointment-card-header ">
+            <div class="appointment-text t-align-l">
+              Fri, 31 Aug 2018 | 10:30am
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content style="padding: 0px;">
+          <div class="appointment-card-content d-flex">
+            <img src="assets/imgs/doctor.png">
+            <div class="appointment-card-content-text">
+              <div class="appointment-text t-align-l">
+                DR. Victor Magalhaes
+              </div>
+              <div class="text t-align-l">
+                MBBS, DNB - Ophthalmology,
+              </div>
+              <div class="text t-align-l">
+                Saint Francis Memorial Hospital
+              </div>
+            </div>
+            <div class="appointment-map">
+              <img src="assets/imgs/position.svg">
+            </div>
+          </div>
+          <div class="appointment-card-action">
+            <div class="t-align-r">
+              <ion-button size="small" color="light">Reschedule</ion-button>
+              <ion-button size="small">Delete</ion-button>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header style="padding: 0px;">
+          <div class="appointment-card-header ">
+            <div class="appointment-text t-align-l">
+              Fri, 31 Aug 2018 | 10:30am
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content style="padding: 0px;">
+          <div class="appointment-card-content d-flex">
+            <img src="assets/imgs/doctor.png">
+            <div class="appointment-card-content-text">
+              <div class="appointment-text t-align-l">
+                DR. Victor Magalhaes
+              </div>
+              <div class="text t-align-l">
+                MBBS, DNB - Ophthalmology,
+              </div>
+              <div class="text t-align-l">
+                Saint Francis Memorial Hospital
+              </div>
+            </div>
+            <div class="appointment-map">
+              <img src="assets/imgs/position.svg">
+            </div>
+          </div>
+          <div class="appointment-card-action">
+            <div class="t-align-r">
+              <ion-button size="small" color="light">Reschedule</ion-button>
+              <ion-button size="small">Delete</ion-button>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <div class="appointment-status">
+        <ion-row>
+          <ion-col>
+            COMPLETED
+          </ion-col>
+          <ion-col class="t-align-r">
+            02
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-card>
+        <ion-card-header style="padding: 0px;">
+          <div class="appointment-card-header ">
+            <div class="appointment-text t-align-l">
+              Fri, 31 Aug 2018 | 10:30am
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content style="padding: 0px;">
+          <div class="appointment-card-content d-flex">
+            <img src="assets/imgs/doctor.png">
+            <div class="appointment-card-content-text">
+              <div class="appointment-text t-align-l">
+                DR. Victor Magalhaes
+              </div>
+              <div class="text t-align-l">
+                MBBS, DNB - Ophthalmology,
+              </div>
+              <div class="text t-align-l">
+                Saint Francis Memorial Hospital
+              </div>
+            </div>
+            <div class="appointment-map">
+              <img src="assets/imgs/position.svg">
+            </div>
+          </div>
+          <div class="appointment-card-action">
+            <div class="t-align-r">
+              <ion-button size="small" >Rebook</ion-button>
+              <ion-button size="small" color="success" (click)="goReview(1)">Rate & Review</ion-button>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div *ngSwitchCase="1">
+      <div class="appointment-status">
+        <ion-row>
+          <ion-col>
+            UPCOMING
+          </ion-col>
+          <ion-col class="t-align-r">
+            02
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-card>
+        <ion-card-header style="padding: 0px;">
+          <div class="appointment-card-header ">
+            <div class="appointment-text t-align-l">
+              Fri, 31 Aug 2018 | 10:30am
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content style="padding: 0px;">
+          <div class="appointment-card-content d-flex">
+            <img src="assets/imgs/doctor.png">
+            <div class="appointment-card-content-text">
+              <div class="appointment-text t-align-l">
+                DR. Victor Magalhaes
+              </div>
+              <div class="text t-align-l">
+                MBBS, DNB - Ophthalmology,
+              </div>
+              <div class="text t-align-l">
+                Saint Francis Memorial Hospital
+              </div>
+            </div>
+            <div class="appointment-map">
+              <img src="assets/imgs/position.svg">
+            </div>
+          </div>
+          <div class="appointment-card-action">
+            <div class="t-align-r">
+              <ion-button size="small" color="light">Reschedule</ion-button>
+              <ion-button size="small">Delete</ion-button>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <div class="appointment-status">
+        <ion-row>
+          <ion-col>
+            COMPLETED
+          </ion-col>
+          <ion-col class="t-align-r">
+            02
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-card>
+        <ion-card-header style="padding: 0px;">
+          <div class="appointment-card-header ">
+            <div class="appointment-text t-align-l">
+              Fri, 31 Aug 2018 | 10:30am
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content style="padding: 0px;">
+          <div class="appointment-card-content d-flex">
+            <img src="assets/imgs/doctor.png">
+            <div class="appointment-card-content-text">
+              <div class="appointment-text t-align-l">
+                DR. Victor Magalhaes
+              </div>
+              <div class="text t-align-l">
+                MBBS, DNB - Ophthalmology,
+              </div>
+              <div class="text t-align-l">
+                Saint Francis Memorial Hospital
+              </div>
+            </div>
+            <div class="appointment-map">
+              <img src="assets/imgs/position.svg">
+            </div>
+          </div>
+          <div class="appointment-card-action">
+            <div class="t-align-r">
+              <ion-button size="small" >Rebook</ion-button>
+              <ion-button size="small" color="success">Rate & Review</ion-button>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
