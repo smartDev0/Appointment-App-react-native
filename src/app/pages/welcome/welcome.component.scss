@@ -11,10 +11,8 @@ ion-slides {
 }
 
 .swiper-slide img {
-  max-height: 50%;
-  max-width: 80%;
-  margin: 60px 0 40px;
-  pointer-events: none;
+    height: 195px;
+    width: 195px;
 }
 
 b {
@@ -62,6 +60,9 @@ p b {
   background-color: #ffffff;
   margin: auto;
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .welcom-rectangle-shadow1 {
   width: 220px;
