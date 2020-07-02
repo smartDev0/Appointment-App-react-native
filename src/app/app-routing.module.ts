@@ -109,8 +109,20 @@ const routes: Routes = [
   {
     path: "help",
     loadChildren: () =>
-      import("./pages/help/help.module").then(
-        (m) => m.HelpPageModule
+      import("./pages/help/help.module").then((m) => m.HelpPageModule),
+  },
+  {
+    path: "appointment",
+    loadChildren: () =>
+      import("./pages/appointment/appointment/appointment.module").then(
+        (m) => m.AppointmentPageModule
+      ),
+  },
+  {
+    path: "rate/:id",
+    loadChildren: () =>
+      import("./pages/appointment/rate-review/rate-review.module").then(
+        (m) => m.RateReviewPageModule
       ),
   },
 ];
