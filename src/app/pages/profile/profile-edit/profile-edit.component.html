@@ -20,29 +20,68 @@
       </ion-col>
     </ion-row>
     <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-control-input" name="fullname" placeholder="FullName">
-        </div>
+      <div class="input-group">
+        <input type="text" class="form-control form-control-input" name="fullname" placeholder="FullName">
       </div>
-      <div class="form-group">
-        <div class="input-group">
-          <input type="number" class="form-control form-control-input" name="phone" placeholder="Mobile Number">
-        </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <input type="number" class="form-control form-control-input" name="phone" placeholder="Mobile Number">
       </div>
-      <div class="form-group">
-        <div class="select-group ">
-            <ion-label>Gender</ion-label>
-            <ion-select >
-              <ion-select-option value="f">Female</ion-select-option>
-              <ion-select-option value="m">Male</ion-select-option>
-              <ion-select-option value="t">Transgender</ion-select-option>
-            </ion-select>
-        </div>
+    </div>
+    <div class="form-group">
+      <div class="select-group ">
+        <ion-label>Gender</ion-label>
+        <ion-select>
+          <ion-select-option value="f">Female</ion-select-option>
+          <ion-select-option value="m">Male</ion-select-option>
+          <ion-select-option value="t">Transgender</ion-select-option>
+        </ion-select>
       </div>
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-control-input" name="fullname" placeholder="Address">
-        </div>
+    </div>
+    <div class="form-group">
+      <div class="select-group">
+        <ion-row>
+          <ion-col size="9">
+            <ion-label>Date of Birth</ion-label>
+            <ion-row>
+              <ion-col size="4">
+                <input type="number" placeholder="DD" class="input">
+              </ion-col>
+              <ion-col size="3">
+                <input type="number" placeholder="MM" class="input">
+              </ion-col>
+              <ion-col size="5">
+                <input type="number" placeholder="YYYY" class="input">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col size="3">
+            <ion-label>Age</ion-label>
+            <ion-row>
+              <ion-col size="12">
+                <input type="number" placeholder="32" class="input">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
       </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control form-control-input" name="fullname" placeholder="Address">
+      </div>
+    </div>
+    <ion-item class="ion-item" no-lines lines="none">
+      <ion-label>Chronic Diseases</ion-label>
+      <ion-select multiple="true" class="custom-select">
+          <ion-select-option value="Asthma">Asthma</ion-select-option>
+          <ion-select-option value="Bipolar">Bipolar mood disease</ion-select-option>
+          <ion-select-option value="black">Black</ion-select-option>
+          <ion-select-option value="red">Red</ion-select-option>
+        </ion-select>
+    </ion-item>
+    <br>
+    <ion-button expand="block">UPDATE PROFILE</ion-button>
   </div>
 </ion-content>

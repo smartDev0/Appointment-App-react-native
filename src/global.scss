@@ -272,72 +272,91 @@ ion-menu {
 .book-icon img {
   width: 16px;
 }
-.doctor-icon{
+.doctor-icon {
   margin-right: 10px;
 }
-.user-infor-group{
- width: 100%;
-// height: 240px;
-filter: drop-shadow(0px 8px 23px rgba(0,0,0,0.34));
-background-color: #ffffff;
-padding: 20px 20px;
+.user-infor-group {
+  width: 100%;
+  // height: 240px;
+  filter: drop-shadow(0px 8px 23px rgba(0, 0, 0, 0.34));
+  background-color: #ffffff;
+  padding: 20px 20px;
 }
-.profile-item{
+.profile-item {
   width: 50px;
   height: 50px;
   border-radius: 25px;
   background: white;
-  filter: drop-shadow(0 0 9px rgba(0,0,0,0.16));
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.16));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.profile-item ion-icon{
+.profile-item ion-icon {
   font-size: 24px;
 }
-.user-detail{
+.user-detail {
   padding: 15px 20px;
 }
-.user-detail-text{
-    font-size: 13px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    color: black;
-    font-weight: 400;
-    font-family: "Roboto";
+.user-detail-text {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: black;
+  font-weight: 400;
+  font-family: "Roboto";
 }
-.edit-icon{
- width: 20px;
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
+.edit-icon {
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
 }
-.edit-profile{
+.edit-profile {
   padding: 15px 50px;
 }
-.upload-img{
+.upload-img {
   width: 100px;
 }
-.input-group{
+.input-group {
   width: 100%;
 }
-.form-control-input{
+.form-control-input {
   padding: 5px 15px;
 }
 .select-group {
-
-    border-radius: 5px;
-    -webkit-filter: drop-shadow(0px 22px 20px rgba(0, 0, 0, 0.19));
-    filter: drop-shadow(0px 22px 20px rgba(0, 0, 0, 0.19));
-    background-color: #ffffff;
-    border: none !important;
-    padding: 5px 10px;
-    letter-spacing: 1px;
-    width: 100%;
-    outline: none;
-    color: #000000;
-    font-weight: 400;
-    font-family: "Roboto";
-    text-align: initial;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(0px 22px 20px rgba(0, 0, 0, 0.19));
+  filter: drop-shadow(0px 22px 20px rgba(0, 0, 0, 0.19));
+  background-color: #ffffff;
+  border: none !important;
+  padding: 5px 5px;
+  letter-spacing: 1px;
+  width: 100%;
+  outline: none;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: initial;
+}
+.input {
+  width: 100%;
+  border-radius: 37px;
+  border: 2px solid grey;
+  padding: 2px;
+  outline: none;
+  margin-top: 3px;
+}
+.custom-select{
+    padding: 5px;
+}
+.ion-item{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+    height: 40px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 22px 20px rgba(0, 0, 0, 0.19));
+  background-color: #ffffff;
 }
