@@ -76,7 +76,7 @@
   padding-left: 30px;
   padding-right: 5px;
   letter-spacing: 1px;
-
+  width: 100%;
   outline: none;
   color: #000000;
   font-weight: 400;
@@ -312,4 +312,32 @@ padding: 20px 20px;
     position: absolute;
     right: 20px;
     cursor: pointer;
+}
+.edit-profile{
+  padding: 15px 50px;
+}
+.upload-img{
+  width: 100px;
+}
+.input-group{
+  width: 100%;
+}
+.form-control-input{
+  padding: 5px 15px;
+}
+.select-group {
+
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(0px 22px 20px rgba(0, 0, 0, 0.19));
+    filter: drop-shadow(0px 22px 20px rgba(0, 0, 0, 0.19));
+    background-color: #ffffff;
+    border: none !important;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    width: 100%;
+    outline: none;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: initial;
 }
