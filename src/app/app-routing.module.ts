@@ -50,6 +50,25 @@ const routes: Routes = [
     loadChildren: () =>
       import("./pages/home/home/home.module").then((m) => m.HomePageModule),
   },
+  {
+    path: "filter",
+    loadChildren: () =>
+      import("./pages/home/filter/filter.module").then(
+        (m) => m.FilterPageModule
+      ),
+  },
+  {
+    path: "list-view",
+    loadChildren: () =>
+      import("./pages/home/list-view/list-view.module").then(
+        (m) => m.ListViewPageModule
+      ),
+  },
+  {
+    path: "map-view",
+    loadChildren: () =>
+      import("./pages/home/map-view/map-view.module").then((m) => m.MapViewPageModule),
+  },
 ];
 
 @NgModule({

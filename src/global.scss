@@ -29,6 +29,11 @@
   width: 17px;
   height: 17px;
   cursor: pointer;
+  
+}
+.back-button{
+  position: absolute;
+  left: 10px;
 }
 .auth-title {
   letter-spacing: 1px;
@@ -134,9 +139,9 @@
   height: 54px;
 }
 .auth-bottom {
-  position: absolute;
+  // position: fixed;
   width: 100%;
-  bottom: 40px;
+  top: 90vh;
 }
 ion-buttons {
   outline: none;
@@ -158,10 +163,11 @@ ion-menu {
   display: flex;
 }
 .close-icon {
-  font-size: 24px;
-  float: right;
-  margin-right: 11px;
-  cursor: pointer;
+      font-size: 26px;
+    float: right;
+    margin-right: 11px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 .map-icon {
   width: 10px;
