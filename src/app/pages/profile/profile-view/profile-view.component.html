@@ -1,0 +1,101 @@
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" routerLink="/home" routerDirection="forward">
+      <img src="assets/imgs/back.svg" alt="..." class="back-icon">
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="notifications"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>PROFILE</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <div class="user-infor-group">
+    <img src="assets/imgs/edit.svg" class="edit-icon" (click)="edit(1)">
+    <div class="avatar">
+      <img src="assets/imgs/user.png" class="avatar-img">
+      <div class="camera">
+        <ion-icon name="camera" class="camera-icon"></ion-icon>
+      </div>
+      <ion-row>
+        <ion-col>
+          <label>
+            SHASHAH WILLIAMS
+          </label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <label class="text">
+            shashahwilliams@gmail.com
+          </label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="profile-item">
+            <ion-icon name="female"></ion-icon>
+          </div>
+          <label class="text">
+            Female
+          </label>
+        </ion-col>
+        <ion-col>
+          <div class="profile-item">
+            <ion-icon name="calendar"></ion-icon>
+          </div>
+          <label class="text">
+            06 Dec 1986
+          </label>
+        </ion-col>
+        <ion-col>
+          <div class="profile-item">
+            <ion-icon name="water"></ion-icon>
+          </div>
+          <label class="text">
+            0 Positive
+          </label>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <div class="user-detail">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Address</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="user-detail-text">
+          <img src="assets/imgs/mapIconBlack.svg" class="map-icon"> 
+          San Francisco, CA 
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Chronic Disease</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="user-detail-text">
+          Blood Pressure, Diabetes
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Insurance Details</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="user-detail-text">
+          HDFC Standard Life Insurance.
+        </div>
+        <div class="user-detail-text">
+          1234 1252 1562 1256
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

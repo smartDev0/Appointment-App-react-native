@@ -81,8 +81,22 @@ const routes: Routes = [
   {
     path: "health/:id",
     loadChildren: () =>
-      import("./pages/health/health-camp-detail/health-camp-detail.module").then(
-        (m) => m.HealthCampDetailPageModule
+      import(
+        "./pages/health/health-camp-detail/health-camp-detail.module"
+      ).then((m) => m.HealthCampDetailPageModule),
+  },
+  {
+    path: "profile",
+    loadChildren: () =>
+      import("./pages/profile/profile-view/profile-view.module").then(
+        (m) => m.ProfileViewPageModule
+      ),
+  },
+  {
+    path: "profile/:id",
+    loadChildren: () =>
+      import("./pages/profile/profile-edit/profile-edit.module").then(
+        (m) => m.ProfileEditPageModule
       ),
   },
 ];
