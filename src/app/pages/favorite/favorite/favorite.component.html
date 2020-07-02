@@ -13,4 +13,191 @@
   </ion-toolbar>
 </ion-header>
 <ion-content fullscreen>
-  </ion-content>
+  <ion-input class="search-input" placeholder="search your favourite doctor"></ion-input>
+  <ion-icon name="search" class="search-icon"></ion-icon>
+  <ion-slides pager="false" [options]="BannerOption" #slideone>
+    <ion-slide>
+      <div class="slide-item">
+        <img src="assets/imgs/tooth.svg">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-item">
+        <ion-icon name="eye" class="eye-icon"></ion-icon>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-item">
+        <img src="assets/imgs/heart.svg">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-item">
+        <img src="assets/imgs/medicine.svg">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-item">
+        <img src="assets/imgs/baby.svg">
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <div class="neurologist">
+    <ion-row>
+      <ion-col>
+        <ion-label class="neurologist-label">
+          Neurologist
+        </ion-label>
+      </ion-col>
+      <ion-col style="text-align: right;">
+        <ion-label class="remove-label">
+          Remove
+        </ion-label>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-slides pager="false" [options]="cardOption">
+    <ion-slide class="d-block">
+      <ion-card>
+        <ion-card-header>
+          <div class="card-doctor">
+            <img src="assets/imgs/user.png" class="card-img">
+            <div class="card-doctor-infor">
+              <div>
+                <div class="text t-align-r">
+                  DR. Victor Magalhaes
+                </div>
+                <ion-card-subtitle class="t-align-r">
+                  MBBS, DNB - Ophthalmology,
+                </ion-card-subtitle>
+                <div class="t-align-r">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  &nbsp;
+                  <ion-label>5.0</ion-label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <div class="text">
+                Experience
+              </div>
+              15yrs
+            </ion-col>
+            <ion-col>
+              <div class="text">
+                Favourites
+              </div>
+              150
+            </ion-col>
+          </ion-row>
+          <div class="t-align-r">
+            <div class="text t-align-r">
+              Clinic Address
+            </div>
+            <ion-label>
+              Saint Francis Memorial Hospital
+            </ion-label>
+            <div class="text t-align-r">
+              #4, San Francisco, CA, USA
+            </div>
+          </div>
+          <div class="card-map">
+            <img src="assets/imgs/position.svg" class="position-img">
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-row>
+        <ion-col>
+          <div class="text">
+            <strong>Consultation Fees</strong>
+          </div>
+          <div class="text">
+            $5
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-button color="success">BOOK</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+    <ion-slide class="d-block">
+      <ion-card>
+        <ion-card-header>
+          <div class="card-doctor">
+            <img src="assets/imgs/user.png" class="card-img">
+            <div class="card-doctor-infor">
+              <div>
+                <div class="text t-align-r">
+                  DR. Victor Magalhaes
+                </div>
+                <ion-card-subtitle class="t-align-r">
+                  MBBS, DNB - Ophthalmology,
+                </ion-card-subtitle>
+                <div class="t-align-r">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  &nbsp;
+                  <ion-label>5.0</ion-label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <div class="text">
+                Experience
+              </div>
+              15yrs
+            </ion-col>
+            <ion-col>
+              <div class="text">
+                Favourites
+              </div>
+              150
+            </ion-col>
+          </ion-row>
+          <div class="t-align-r">
+            <div class="text t-align-r">
+              Clinic Address
+            </div>
+            <ion-label>
+              Saint Francis Memorial Hospital
+            </ion-label>
+            <div class="text t-align-r">
+              #4, San Francisco, CA, USA
+            </div>
+          </div>
+          <div class="card-map">
+            <img src="assets/imgs/position.svg" class="position-img">
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-row>
+        <ion-col>
+          <div class="text">
+            <strong>Consultation Fees</strong>
+          </div>
+          <div class="text">
+            $5
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-button color="success">BOOK</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
