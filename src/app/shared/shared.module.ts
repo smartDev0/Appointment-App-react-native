@@ -5,11 +5,10 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { IonicModule } from "@ionic/angular";
 
-import { BookingComponent } from "./modal/booking/booking.component";
 
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule],
-  declarations: [BookingComponent],
+  declarations: [],
 })
 export class SharedModule {}

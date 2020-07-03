@@ -128,8 +128,20 @@ const routes: Routes = [
   {
     path: "doctor/:id",
     loadChildren: () =>
-      import("./pages/doctor/doctor.module").then(
-        (m) => m.DoctorPageModule
+      import("./pages/doctor/doctor.module").then((m) => m.DoctorPageModule),
+  },
+  {
+    path: "booking",
+    loadChildren: () =>
+      import("./pages/book/booking/booking.module").then(
+        (m) => m.BookingPageModule
+      ),
+  },
+  {
+    path: "booking-confirm",
+    loadChildren: () =>
+      import("./pages/book/booking-confirm/booking-confirm.module").then(
+        (m) => m.BookingConfirmPageModule
       ),
   },
 ];
