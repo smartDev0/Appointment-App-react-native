@@ -114,7 +114,7 @@
   font-weight: 300;
   font-family: "Roboto";
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
 }
 .slide-item-text {
   color: #000000;
@@ -686,4 +686,11 @@ ion-segment {
 .booking-item {
   padding: 5px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+.confirm-img{
+  width: 25vw;
+}
+.booking-confirm{
+  text-align: center;
+      height: 100vh;
 }

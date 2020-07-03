@@ -2,6 +2,7 @@ import { Component, ViewChild, OnInit, Inject, LOCALE_ID } from "@angular/core";
 import { formatDate } from "@angular/common";
 import { AlertController } from "@ionic/angular";
 import { CalendarComponent } from "ionic2-calendar";
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-booking",
@@ -29,6 +30,7 @@ export class BookingComponent implements OnInit {
 
   constructor(
     private alertCtrl: AlertController,
+    private router: Router,
     @Inject(LOCALE_ID) private locale: string
   ) {}
 
@@ -47,5 +49,8 @@ export class BookingComponent implements OnInit {
 
   onViewTitleChanged(title) {
     this.viewTitle = title;
+  }
+  goConfirm() {
+      this.router.navigate(["/booking-confirm"]);
   }
 }
