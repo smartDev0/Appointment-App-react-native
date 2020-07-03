@@ -1,14 +1,99 @@
-<ion-header no-border >
+<ion-header no-border>
   <ion-toolbar color="primary">
     <ion-buttons slot="end">
-      <ion-menu-button ></ion-menu-button>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>RELIEFZ</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content fullscreen>
-  <form>
-    <div class="form">
+  <div class="home-form">
+    <ion-row>
+      <ion-col>
+        <ion-label>
+          FIND A DOCTOR
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <div class="form-group">
+      <div class="input-group">
+        <img src="assets/imgs/mapIconBlack.svg" class="form-icon home-icon">
+        <input type="text" class="form-control" name="userName" placeholder="Enter Location">
       </div>
-    </form>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <ion-icon name="search" class="home-icon home-search-icon"></ion-icon>
+        <input type="text" class="form-control" name="userName" placeholder="Enter Doctor / Specialist / Hospital">
+      </div>
+    </div>
+  </div>
+  <div class="specialitie">
+    <div class="specialitie-text">
+      <ion-row>
+        <ion-col size="8">
+          <div>
+            COMMON SPECIALITIES
+          </div>
+        </ion-col>
+        <ion-col class="t-align-r">
+          <ion-label>
+            view all
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </div>
+    <ion-slides pager="false" [options]="BannerOption" #slideone>
+      <ion-slide>
+        <div>
+          <div class="slide-item">
+            <img src="assets/imgs/tooth.svg">
+          </div>
+          <div class="slide-item-text">
+            Dentist
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <div class="slide-item">
+            <ion-icon name="eye" class="eye-icon"></ion-icon>
+          </div>
+          <div class="slide-item-text">
+            Eye Specialist
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <div class="slide-item">
+            <img src="assets/imgs/heart.svg">
+          </div>
+          <div class="slide-item-text">
+            Cardiologist
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <div class="slide-item">
+            <img src="assets/imgs/medicine.svg">
+          </div>
+          <div class="slide-item-text">
+            Neurologist
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <div class="slide-item">
+            <img src="assets/imgs/baby.svg">
+          </div>
+          <div class="slide-item-text">
+            General
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>
