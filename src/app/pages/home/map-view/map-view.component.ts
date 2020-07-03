@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from "@ionic/angular";
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-map-view",
@@ -7,9 +8,11 @@ import { ModalController } from "@ionic/angular";
   styleUrls: ["./map-view.component.scss"],
 })
 export class MapViewComponent implements OnInit {
-  constructor(public modalController: ModalController) {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
-  async presentModal() {
+  async presentModal() {}
+  goDoctor(id) {
+    this.router.navigate(["/doctor/", id]);
   }
 }
