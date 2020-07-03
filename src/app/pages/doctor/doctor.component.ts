@@ -9,10 +9,10 @@ import { Router } from '@angular/router';
 export class DoctorComponent implements OnInit {
   segment = 0;
   refresherEvent: any;
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
-  segmentChanged(event) {}
+  ngOnInit() { }
+  segmentChanged(event) { }
   changeSlide(e) {
     this.segment = e;
     if (this.refresherEvent) {
@@ -20,15 +20,9 @@ export class DoctorComponent implements OnInit {
     }
   }
   doRefresh(event) {
-    // this.refresherEvent = event;
-    // switch (this.segment) {
-    //   case 0:
-    //     break;
-    //   case 1:
-    //     break;
-    // }
   }
-  goReview(id) {
-    this.router.navigate(["/rate/", id]);
+
+  goBooking() {
+    this.router.navigate(["/booking/"]);
   }
 }
