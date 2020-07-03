@@ -652,33 +652,38 @@ ion-segment {
 .filter-form {
   padding: 15px 25px;
 }
-.range-slider{
+.range-slider {
   padding: 0px;
 }
-.filter-form-action{
-  filter: drop-shadow(0 0 10.5px rgba(0,0,0,0.19));
-background-color: #ffffff;
-    padding: 10px 5px;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
+.filter-form-action {
+  filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.19));
+  background-color: #ffffff;
+  padding: 10px 5px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 1000;
 }
-.doctor-information{
+.doctor-information {
   padding: 10px;
 }
-.doctor-description{
+.doctor-description {
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
-.doctor-website{
+.doctor-website {
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
-.select-item{
+.select-item {
   border-radius: 28px;
-background-color: #ffffff;
-border: 1px solid #e6e6e6;
-width: 100%;
-padding: 5px 10px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  padding: 5px 10px;
 }
-.share-img{
+.share-img {
   width: 16px;
+}
+.booking-item {
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }

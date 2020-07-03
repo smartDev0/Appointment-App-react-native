@@ -6,7 +6,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { IonicModule } from "@ionic/angular";
 
 import { BookingComponent } from "./booking.component";
-
+import { NgCalendarModule } from "ionic2-calendar";
 const routes: Routes = [
   {
     path: "",
@@ -18,7 +18,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
+    IonicModule,NgCalendarModule,
     RouterModule.forChild(routes),
   ],
   declarations: [BookingComponent],
