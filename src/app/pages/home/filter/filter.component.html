@@ -1,3 +1,90 @@
-<p>
-  filter works!
-</p>
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" routerLink="/home" routerDirection="forward">
+      <img src="assets/imgs/close.svg" alt="..." class="back-icon">
+    </ion-buttons>
+    <ion-title>FILTER</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <div class="filter-form">
+    <ion-row>
+      <ion-col>
+        <ion-label>
+          RATINGS
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-icon name="star"></ion-icon>&nbsp;
+        <ion-icon name="star"></ion-icon>&nbsp;
+        <ion-icon name="star"></ion-icon>&nbsp;
+        <ion-icon name="star"></ion-icon>&nbsp;
+        <ion-icon name="star"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-label>
+          EXPERIENCE (yrs)
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-range min="1" max="25" pin color="primary" class="range-slider">
+          <ion-icon slot="start" size="small" name="star"></ion-icon>
+          <ion-icon slot="end" name="star"></ion-icon>
+        </ion-range>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-label>
+          DISTANCE (Km)
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-range min="1" max="10" pin color="primary" class="range-slider">
+          <ion-icon slot="start" size="small" name="car"></ion-icon>
+          <ion-icon slot="end" name="car"></ion-icon>
+        </ion-range>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item class="ion-item" no-lines lines="none">
+          <ion-label>GENDER</ion-label>
+          <ion-select class="custom-select">
+            <ion-select-option value="Male">Male</ion-select-option>
+            <ion-select-option value="Femaile">Femaile</ion-select-option>
+            <ion-select-option value="Transgender">Transgender</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col>
+        <ion-item class="ion-item" no-lines lines="none">
+          <ion-label>LANGUAGE SPOKEN</ion-label>
+          <ion-select multiple="true" class="custom-select">
+            <ion-select-option value="English">English</ion-select-option>
+            <ion-select-option value="Spanish">Spanish</ion-select-option>
+            <ion-select-option value="French">French</ion-select-option>
+            <ion-select-option value="German">German</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="filter-form-action">
+    <div class="t-align-r">
+              <ion-button color="light">RESET</ion-button>
+              <ion-button  color="success">APPLY</ion-button>
+    </div>
+  </div>
+</ion-content>
