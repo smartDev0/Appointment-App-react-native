@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, ViewChild, OnInit, Inject, LOCALE_ID } from "@angular/core";
+import { formatDate } from "@angular/common";
+import { AlertController } from "@ionic/angular";
+import { CalendarComponent } from "ionic2-calendar";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
@@ -15,7 +17,43 @@ export class HomeComponent implements OnInit {
     speed: 500,
     spaceBetween: 4,
   };
-  constructor() {}
+  event = {
+    title: "",
+    desc: "",
+    startTime: "",
+    endTime: "",
+    allDay: false,
+  };
+  minDate = new Date().toISOString();
 
-  ngOnInit() {}
+  eventSource = [];
+  viewTitle;
+  calendar = {
+    mode: "month",
+    currentDate: new Date(),
+  };
+
+  @ViewChild(CalendarComponent) myCal: CalendarComponent;
+
+  constructor(
+    private alertCtrl: AlertController,
+    @Inject(LOCALE_ID) private locale: string
+  ) {}
+
+  ngOnInit() {
+    this.resetEvent();
+  }
+  resetEvent() {
+    this.event = {
+      title: "",
+      desc: "",
+      startTime: new Date().toISOString(),
+      endTime: new Date().toISOString(),
+      allDay: false,
+    };
+  }
+
+  onViewTitleChanged(title) {
+    this.viewTitle = title;
+  }
 }

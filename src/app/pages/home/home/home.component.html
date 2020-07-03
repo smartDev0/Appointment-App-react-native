@@ -96,4 +96,35 @@
       </ion-slide>
     </ion-slides>
   </div>
+  <div class="calendar-form">
+    <ion-row>
+      <ion-col>
+        <ion-label>
+          {{viewTitle}}
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <calendar [eventSource]="eventSource" [calendarMode]="calendar.mode" [currentDate]="calendar.currentDate"
+          [showEventDetail]="false" (onTitleChanged)="onViewTitleChanged($event)" startHour="6" endHour="20" step="30"
+          startingDayWeek="1">
+        </calendar>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="treatment-form">
+    <ion-row>
+      <ion-col>
+        <ion-label>
+          REASON FOR TREATMENT
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-textarea placeholder="Enter reason" class="textarea-form"></ion-textarea>
+  </div>
+  <div class="treatment-form">
+  <ion-button expand="full" color="success">FIND</ion-button>
+  </div>
+
 </ion-content>
