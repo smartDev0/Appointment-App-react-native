@@ -1,3 +1,96 @@
-<p>
-  map-view works!
-</p>
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" routerLink="/home" routerDirection="forward">
+      <img src="assets/imgs/back.svg" alt="..." class="back-icon">
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="notifications"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-searchbar class="ion-search-input"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <div class="filter-bar">
+    <div class="option-bar">
+      <ion-item>
+        <ion-label>Option</ion-label>
+        <ion-select>
+          <ion-select-option value="nes">EYE SPECIALIST</ion-select-option>
+          <ion-select-option value="n64">Nintendo64</ion-select-option>
+          <ion-select-option value="ps">PlayStation</ion-select-option>
+          <ion-select-option value="genesis">Sega Genesis</ion-select-option>
+          <ion-select-option value="saturn">Sega Saturn</ion-select-option>
+          <ion-select-option value="snes">SNES</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div class="filter-text">
+      <ion-icon name="funnel"></ion-icon>
+      &nbsp;
+      <ion-label>
+        FILTER
+      </ion-label>
+    </div>
+  </div>
+  <div class="list-view-item" routerLink="/list-view" routerDirection="forward">
+    <ion-icon name="list"></ion-icon>
+  </div>
+  <div class="map-view">
+    <div class="search-group-circle">
+      <br>
+      <div style="text-align: center;">
+        <img src="assets/imgs/doctorPosition.svg" class="doctor-postion-img" (click)="presentModal()">
+      </div>
+    </div>
+  </div>
+  <div class="booking-modal">
+    <ion-card>
+      <ion-card-content style="padding: 0px;">
+        <ion-row>
+          <ion-col size="3" class="d-flex-center">
+            <div>
+              <img src="assets/imgs/doctor.png" class="book-doctor-img">
+            </div>
+
+          </ion-col>
+          <ion-col size="6">
+            <div class="appointment-card-content-text">
+              <div class="appointment-text t-align-l">
+                 <strong>DR. Victor Magalhaes</strong>
+              </div>
+              <div class="text t-align-l">
+                MBBS, DNB - Ophthalmology,
+              </div>
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <div class="text t-align-l">
+                #4, San Francisco, CA, USA
+              </div>
+            </div>
+          </ion-col>
+          <ion-col size="3" class="d-flex-center">
+            <div>
+              <div>
+                <ion-button size="small" color="success">Book</ion-button>
+              </div>
+              <div class="text">
+                1.5Km
+              </div>
+            </div>
+
+          </ion-col>
+        </ion-row>
+        
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -542,3 +542,108 @@ ion-segment {
   background-color: #ffffff;
   padding: 5px 10px;
 }
+.searchbar-input-container ion-icon {
+  top: 7px !important;
+}
+.ion-search-input {
+  height: 40px !important;
+}
+.searchbar-input {
+  border-radius: 30px !important;
+  height: 32px !important;
+}
+.filter-bar {
+  display: flex;
+}
+.filter-text {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.13);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+.option-bar {
+  width: 70%;
+}
+.list-view-item {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 13px 13.5px rgba(0, 0, 0, 0.24));
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  position: absolute;
+  margin-top: 10px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.map-view {
+  height: 84vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  padding-top: 40px;
+}
+.search-group-circle {
+  background-color: rgba(230, 28, 35, 0.12156862745098039);
+  width: 80vw;
+  border-radius: 50vw;
+  height: 80vw;
+}
+.doctor-postion-img {
+  width: 24px;
+  cursor: pointer;
+}
+.booking-modal {
+  position: absolute;
+  top: 75vh;
+}
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-doctor-img {
+  width: 68px;
+  height: 68px;
+}
+.book-favorite{
+  position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+.book-favorite img{
+     width: 20px;
+    height: 20px;
+}
+.t-center{
+  text-align: center;
+}
+.booking-time{
+  display: flex;
+  align-items: center;
+}
+.map-view-item{
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 13px 13.5px rgba(0, 0, 0, 0.24));
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+      position: fixed;
+    /* margin-top: 10px; */
+    right: 29px;
+    bottom: 17px;
+}

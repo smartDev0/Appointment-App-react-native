@@ -11,19 +11,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AdminLayoutComponent } from "./layout/admin-layout/admin-layout.component";
 import { AuthLayoutComponent } from "./layout/auth-layout/auth-layout.component";
 import {HomePageModule } from './pages/home/home/home.module';
+import { SharedModule} from './shared/shared.module'
 @NgModule({
-  declarations: [
-    AppComponent,
-    AdminLayoutComponent,
-    AuthLayoutComponent,
-    
-  ],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
     HomePageModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    SharedModule,
   ],
   providers: [
     StatusBar,
