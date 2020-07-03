@@ -1,0 +1,180 @@
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" routerLink="/home" routerDirection="forward">
+      <img src="assets/imgs/back.svg" alt="..." class="back-icon">
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="notifications"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <ion-card>
+    <ion-card-content style="padding: 0px;">
+      <div class="appointment-card-content">
+        <ion-row>
+          <ion-col size="3" class="d-flex-center">
+            <div>
+              <img src="assets/imgs/doctor.png" class="book-doctor-img">
+            </div>
+          </ion-col>
+          <ion-col size="9">
+            <div class="booking-card-content-text">
+              <div class="appointment-text t-align-l">
+                <strong>DR. Victor Magalhaes</strong>
+              </div>
+              <div class="text t-align-l">
+                MBBS, DNB - Ophthalmology,
+              </div>
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <div class="text t-align-l">
+                <strong>Saint Francis Memorial Hospital</strong>
+                &nbsp;&nbsp;&nbsp; 1.5Km
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="t-center">
+          <ion-col>
+            <div class="text">
+              Experience
+            </div>
+            15yrs
+          </ion-col>
+          <ion-col>
+            <div class="text">
+              Ratings
+            </div>
+            4.5
+          </ion-col>
+          <ion-col>
+            <div class="text">
+              Favourites
+            </div>
+            150
+          </ion-col>
+        </ion-row>
+        <div class="book-favorite">
+          <img src="assets/imgs/Favourite.svg">
+        </div>
+      </div>
+      <div class="appointment-card-action">
+        <ion-row>
+          <ion-col class="booking-time">
+            <div class="text d-flex">
+              <ion-icon name="time"></ion-icon>
+              Open Timings : 9:00am - 6:00pm
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="block" disabled>CONSULTATION FEES $5</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-segment mode="md" (ionChange)="segmentChanged($event.target.value)" [(ngModel)]="segment">
+        <ion-segment-button mode="md" value="0" (click)="changeSlide(0)">
+          <div class="d-flex">
+            <ion-label name="honey"><b>ABOUT</b></ion-label>
+          </div>
+        </ion-segment-button>
+        <ion-segment-button mode="md" value="1" (click)="changeSlide(1)">
+          <div class="d-flex">
+            <ion-label name="buddy"><b>CONDITION TREATED</b></ion-label>
+          </div>
+        </ion-segment-button>
+        <ion-segment-button mode="md" value="2" (click)="changeSlide(2)">
+          <div class="d-flex">
+            <ion-label name="buddy"><b>AWARDS</b></ion-label>
+          </div>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="0">
+      <div class="doctor-information">
+        <div class="doctor-description">
+          <ion-row>
+            <ion-col>
+              <div class="text t-align-l">
+                <b>
+                  Description
+                </b>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <div class="text t-align-l">
+                Dr. Victor Magalhaes is an avid learner and expert in performing
+                Laser treatment. He has various national and international
+                publications on his name.
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="doctor-website">
+          <ion-row>
+            <ion-col class="d-flex">
+              <ion-icon name="globe"></ion-icon>
+              &nbsp;&nbsp;
+              <ion-label class="text">
+                www.heathcare@reliefz.com
+              </ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="doctor-language">
+          <ion-row>
+            <ion-col size="3">
+              <div class="text select-item">
+                English
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text select-item">
+                French
+              </div>
+            </ion-col>
+
+            <ion-col size="3">
+              <div class="text select-item">
+                Latin
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text select-item">
+                Italian
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="filter-form-action">
+    <div class="t-align-r">
+      <ion-button color="light">
+        <img src="assets/imgs/share.svg" class="share-img">
+        &nbsp;Share </ion-button>
+      <ion-button  color="success">Book an appointment</ion-button>
+    </div>
+  </div>
+</ion-content>

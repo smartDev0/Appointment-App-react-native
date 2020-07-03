@@ -125,6 +125,13 @@ const routes: Routes = [
         (m) => m.RateReviewPageModule
       ),
   },
+  {
+    path: "doctor/:id",
+    loadChildren: () =>
+      import("./pages/doctor/doctor.module").then(
+        (m) => m.DoctorPageModule
+      ),
+  },
 ];
 
 @NgModule({
