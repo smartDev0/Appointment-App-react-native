@@ -144,6 +144,13 @@ const routes: Routes = [
         (m) => m.BookingConfirmPageModule
       ),
   },
+  {
+    path: "family",
+    loadChildren: () =>
+      import("./pages/profile/family/family.module").then(
+        (m) => m.FamilyViewPageModule
+      ),
+  },
 ];
 
 @NgModule({

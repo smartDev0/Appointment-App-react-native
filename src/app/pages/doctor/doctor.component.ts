@@ -9,20 +9,22 @@ import { Router } from '@angular/router';
 export class DoctorComponent implements OnInit {
   segment = 0;
   refresherEvent: any;
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
-  ngOnInit() { }
-  segmentChanged(event) { }
+  ngOnInit() {}
+  segmentChanged(event) {}
   changeSlide(e) {
     this.segment = e;
     if (this.refresherEvent) {
       this.refresherEvent.target.complete();
     }
   }
-  doRefresh(event) {
-  }
+  doRefresh(event) {}
 
   goBooking() {
     this.router.navigate(["/booking/"]);
+  }
+  addFamily() {
+    this.router.navigate(["/family"]);
   }
 }
