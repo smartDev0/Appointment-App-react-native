@@ -158,6 +158,13 @@ const routes: Routes = [
         (m) => m.NotificatiosPageModule
       ),
   },
+  {
+    path: "checkout",
+    loadChildren: () =>
+      import("./pages/checkout/checkout/checkout.module").then(
+        (m) => m.CheckoutPageModule
+      ),
+  },
 ];
 
 @NgModule({

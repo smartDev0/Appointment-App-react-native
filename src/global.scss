@@ -584,7 +584,7 @@ ion-segment {
 }
 
 .map-view {
-  height: 85vh;
+  height: 90vh;
   background: black;
   display: flex;
   justify-content: center;
@@ -705,4 +705,7 @@ ion-segment {
 .d-flex-vertical {
   display: flex;
   align-items: center;
+}
+.order-form{
+  padding: 5px 10px;
 }

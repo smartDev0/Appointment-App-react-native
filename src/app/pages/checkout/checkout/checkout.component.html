@@ -1,0 +1,83 @@
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" routerLink="/home" routerDirection="forward">
+      <img src="assets/imgs/back.svg" alt="..." class="back-icon">
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="notifications"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>PLACE ORDER</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Select Payment Method</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group allow-empty-selection="true" name=“radio-group” (ionChange)="radioGroupChange($event)">
+          <ion-item style="font-size: 14px;">
+            <ion-label>
+              <div class="d-flex">
+                <img src="https://image.flaticon.com/icons/svg/760/760503.svg" style="width: 30px;height: 20px;">
+                Cash On Delivery
+              </div>
+            </ion-label>
+            <ion-radio value="1" ></ion-radio>
+          </ion-item>
+          <ion-item style="font-size: 14px;">
+            <ion-label>
+              <div class="d-flex">
+                <img src="assets/imgs/stripe.png" style="height: 20px;">
+                Pay Via Stripe
+              </div>
+            </ion-label>
+            <ion-radio value="2" ></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <div *ngIf="stripeView">
+        <ion-row>
+          <ion-col>
+            <ion-labal>
+              Please Provide Following Details
+            </ion-labal>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input type="number" class="form-control form-control-input" name="phone" placeholder="Card Number">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input type="number" class="form-control form-control-input" name="phone" placeholder="Exp Month">
+          </ion-col>
+          <ion-col>
+            <input type="number" class="form-control form-control-input" name="phone" placeholder="Exp Year">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input type="number" class="form-control form-control-input" name="phone" placeholder="CVV">
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <div class="order-form">
+    <ion-textarea class="form-textarea"></ion-textarea>
+  </div>
+  <br>
+  <br>
+  <div class="filter-form-action">
+    <div class="t-align-r">
+      <ion-button color="success" expand="full" color="success" routerLink="/home" routerDirection="forward">Place Order
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

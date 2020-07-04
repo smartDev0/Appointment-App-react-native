@@ -10,7 +10,7 @@ export class BookingConfirmComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {}
-  goHome() {
-    this.router.navigate(["/home"]);
+  goCheckout() {
+    this.router.navigate(["/checkout"]);
   }
 }
