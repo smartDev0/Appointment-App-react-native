@@ -185,11 +185,11 @@ ion-menu {
   padding-top: 17px;
 }
 .map-text {
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 1px;
   line-height: 30px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Roboto";
   text-align: center;
 }
@@ -517,7 +517,7 @@ ion-segment {
   filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.15));
   background-color: #ffffff;
 }
-.native-textarea{
+.native-textarea {
   height: 100px;
 }
 .home-form {
@@ -603,7 +603,7 @@ ion-segment {
   width: 80vw;
   border-radius: 50vw;
   height: 80vw;
-      margin-top: 40px;
+  margin-top: 40px;
 }
 .doctor-postion-img {
   width: 24px;
@@ -694,11 +694,22 @@ ion-segment {
   padding: 5px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
-.confirm-img{
+.confirm-img {
   width: 25vw;
 }
-.booking-confirm{
+.booking-confirm {
   text-align: center;
-      height: 100vh;
-      padding: 0 20px;
+  height: 100vh;
+  padding: 0 20px;
+}
+.notification-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.15));
+  background-color: #ffffff;
+}
+.d-flex-vertical {
+  display: flex;
+  align-items: center;
 }

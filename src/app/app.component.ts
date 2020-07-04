@@ -44,6 +44,10 @@ export class AppComponent {
         this.menuCtrl.toggle();
         this.nav.navigateRoot("/appointment");
         break;
+      case "notifications":
+        this.menuCtrl.toggle();
+        this.nav.navigateRoot("/notifications");
+        break;
       case "favorite":
         this.menuCtrl.toggle();
         this.nav.navigateRoot("/favorite");

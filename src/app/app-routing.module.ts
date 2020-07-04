@@ -151,6 +151,13 @@ const routes: Routes = [
         (m) => m.FamilyViewPageModule
       ),
   },
+  {
+    path: "notifications",
+    loadChildren: () =>
+      import("./pages/notifications/notifications.module").then(
+        (m) => m.NotificatiosPageModule
+      ),
+  },
 ];
 
 @NgModule({
